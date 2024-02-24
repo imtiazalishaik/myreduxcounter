@@ -11,3 +11,10 @@ export const DecAction = (value) => async (dispatch) => {
     payload: value,
   });
 };
+
+export const ZeroAction = (value) => async (dispatch) => {
+  dispatch({
+    type: "RESET",
+    payload: value,
+  });
+};
